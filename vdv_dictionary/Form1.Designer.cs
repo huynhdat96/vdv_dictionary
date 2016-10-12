@@ -30,6 +30,9 @@
         {
             this.click_here = new System.Windows.Forms.Button();
             this.enter = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // click_here
@@ -48,15 +51,34 @@
             this.enter.Size = new System.Drawing.Size(604, 26);
             this.enter.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(21, 100);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(129, 211);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // listView1
+            // 
+            this.listView1.Location = new System.Drawing.Point(157, 101);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(468, 210);
+            this.listView1.TabIndex = 3;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(645, 338);
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.enter);
             this.Controls.Add(this.click_here);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -66,6 +88,8 @@
 
         private System.Windows.Forms.Button click_here;
         private System.Windows.Forms.TextBox enter;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ListView listView1;
 
     }
 }
